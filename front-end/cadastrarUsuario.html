@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cadastro Reembolso - Material Design Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-signin col-md-4 offset-md-4">
+          <h3 class="title">Cadastro Reembolso</h3>
+          <form class="form-cadastrar">
+            <div class="md-form">
+                <input type="text" id="nome" class="form-control" required autofocus>
+                <label for="nome" >Nome</label>
+            </div>
+            <div class="md-form">
+                <input type="email" id="email" class="form-control" required>
+                <label for="email" >E-mail</label>
+            </div>
+            <div class="md-form">
+                <input type="password" id="senha" class="form-control" required>
+                <label for="senha" >Senha</label>
+            </div>
+            <div class="md-form">
+                <input type="password" id="senhaRepetir" class="form-control" required>
+                <label for="senhaRepetir" >Repetir Senha</label>
+            </div>
+
+            <!--Radio group-->
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="empresa" class="custom-control-input">
+                <label class="custom-control-label" for="empresa">Criar uma nova empresa (Admin)</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="usuario" class="custom-control-input">
+                <label class="custom-control-label" for="usuario">Inserir código existente</label>
+              </div>
+            <!--Radio group-->
+
+            <div class="md-form">
+                <input type="text" id="codigoText" class="form-control" required>
+                <label for="codigoText" >Código da Empresa</label>
+            </div>
+            <div class="button-login">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">CADASTRAR</button>
+            </div>            
+          </form>
+        </div>
+      </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

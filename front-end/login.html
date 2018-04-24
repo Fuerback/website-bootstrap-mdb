@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="loginModulo">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Login - Material Design Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- AngularJS -->
+    <script type="text/javascript" src="js/angular.min.js"></script>
+</head>
+
+<body ng-controller="loginController">
+    <!-- Start your project here-->
+    <div class="container">
+        <div class="form-signin col-md-4 offset-md-4">
+          <h3 class="title">Reembolso</h3>
+          <form class="form-login">
+            <div class="md-form">
+                <input type="email" id="email" class="form-control" ng-model="email" x-webkit-speech required autofocus>
+                <label for="email" >E-mail</label>
+            </div>
+            <div class="md-form">
+                <input type="password" id="senha" class="form-control" ng-model="senha" required>
+                <label for="senha" >Senha</label>
+            </div>
+            <div class="button-login">
+                <button class="btn btn-lg btn-primary btn-block" ng-click="validaLogin()" type="submit">LOGIN</button>
+            </div>            
+          </form>
+          <form class="form-buttons">
+            <div class="form-row">
+              <div class="form-group col-md-6 text-left">
+                <p><a href="redefinirSenha.html" class="login-links" id="esqueci">ESQUECI MINHA SENHA</a></p>
+              </div>
+              <div class="form-group col-md-6 text-right">
+                <p><a href="cadastrarUsuario.html" class="login-links " id="cadastrar">QUERO ME CADASTRAR</a></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- AngularJS -->
+    <script type="text/javascript" src="controller/login.js"></script>
+</body>
+
+</html>
